@@ -5,8 +5,11 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>Dream_Real</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+    <modules>
+        <module>dream_real_web</module>
+    </modules>
+    <packaging>pom</packaging>
 
 	<name>Dream_Real</name>
 	<description>Demo project for Spring Boot</description>
@@ -33,10 +36,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
+		</dependency>-->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
