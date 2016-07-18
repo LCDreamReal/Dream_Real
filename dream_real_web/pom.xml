@@ -14,5 +14,10 @@
 
 
     <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>dubbo_provider</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>
