@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 @SpringBootApplication
 @RestController
 @EnableAutoConfiguration
-@ImportResource("classpath*:dubbo-provider.xml")
+@ImportResource("classpath:dubbo-provider.xml")
 public class DreamRealApplication {
 
     @Resource
@@ -22,8 +22,7 @@ public class DreamRealApplication {
 	@RequestMapping("/")
 	public String index(){
 
-//        System.out.println(demoService.sayHello("hello"));
-        return "Spring Boot Test!";
+        return demoService.sayHello("licheng");
 	}
 
 	public static void main(String[] args) {
