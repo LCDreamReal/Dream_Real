@@ -13,7 +13,7 @@ import java.util.List;
 @org.springframework.stereotype.Repository
 public interface CityRepository extends Repository<City, Long> {
 
-    public List<City> findByName(String name);
+    List<City> findByName(String name);
 
     Iterable<City> findAll();
 
