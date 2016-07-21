@@ -25,3 +25,6 @@ http://blog.csdn.net/code4grow/article/details/23287227
 
 # Druid本地监控平台
 http://localhost:8080/druid/index.html
+
+# IDEA Plugin开发
+http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started.html
