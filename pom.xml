@@ -34,6 +34,20 @@
 	</properties>
 
 	<dependencies>
+
+        <!-- 提供对MongoDB、Data-Rest或者Solr的支持 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- 主要提供监控、管理和审查应用程序的功能 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -44,6 +58,8 @@
                 </exclusion>
             </exclusions>
 		</dependency>
+
+        <!-- 该starter包括web应用程序的依赖库 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -54,6 +70,8 @@
                 </exclusion>
             </exclusions>
 		</dependency>
+
+        <!-- JPA starter提供使用Java Persistence API(例如Hibernate等)的依赖库 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -65,6 +83,7 @@
             </exclusions>
 		</dependency>
 
+        <!-- 这个starter包括了spring-test依赖以及其他测试框架，例如JUnit和Mockito等等 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -76,6 +95,7 @@
                 </exclusion>
             </exclusions>
 		</dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j</artifactId>
